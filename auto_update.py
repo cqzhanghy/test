@@ -9,7 +9,8 @@ print("origin/master:",repo.commit(r))
 if repo.commit(w) != repo.commit(r):
     print("need update")
     print("process update.....")
+    repo.git.merge(r)
 else:
     print("It's up to date")
-    repo.git.merge(r)
+    
 
