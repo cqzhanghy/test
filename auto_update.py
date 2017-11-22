@@ -11,6 +11,6 @@ if repo.commit(w) != repo.commit(r):
     print("process update.....")
     repo.git.merge(r)
 else:
-    print("It's up to date")
+    print("It's up to date  ")
     
 
